@@ -20,6 +20,7 @@ body
 {
     background-color: whitesmoke;
     border-radius: 50px;
+    margin-top: 6px;
 }
 .cover
 {
@@ -28,6 +29,7 @@ body
     background-position: center;
     background-size: cover;
     border-radius: 5px;
+    margin-top: 5px;
     
 }
 .pic
