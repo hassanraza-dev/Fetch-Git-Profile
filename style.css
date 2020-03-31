@@ -1,0 +1,52 @@
+body
+{
+    margin: 0px;
+    padding: 0px;
+    background-color:#3B5998;
+    text-align: center;
+    
+}
+.screen
+{
+    background-color: white;
+    height: 625px;
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 10px;
+    border-radius: 20px;
+    padding: 2px;
+}
+.cstm
+{
+    background-color: whitesmoke;
+    border-radius: 50px;
+}
+.cover
+{
+    background-image: url(./img/cover.jpg);
+    height: 120px;
+    background-position: center;
+    background-size: cover;
+    border-radius: 5px;
+    
+}
+.pic
+{
+    background-image: url(./img/pic.jpg);
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-top: -60px;
+    border: 5px white solid;
+    background-position: center;
+    background-size: cover;
+}
+.user_name
+{
+    font-size: 30px;
+}
+.location,.email
+{
+    font-size: 20px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="./style.css" type="text/css">
+</head>
+
+
+<body>
+
+    <div class="screen">
+        <div id="error_div" class="w3-display-middle" style="display: none;">
+            <h1 style="color: red;">User Not Found</h1>
+        </div>
+
+        <input type="text" id="user_name" class="form-control cstm" placeholder="Enter Github Username">
+        <button class="btn btn-danger" onclick="get_github_data()" style="width: 100%;">Check</button>
+
+        <div class="cover"></div>
+
+
+        <div class="card-avatar w3-card-4" id="avatar-card"></div>
+
+            <div class="pic " id="profile_pic"> </div>
+            <div class="detail_box">
+                <span class="user_name" id="git_user">---</span><br><br><br>
+                <span class="location" id="git_user_location">---</span><br>
+                <span class="email" id="git_user_id">------</span><br>
+            </div>
+            <center>
+                <table style="margin-top: 40px;">
+                    <tr>
+                        <th style="font-size: 17px; width: 90px; text-align: center; color: #3B5998;">Repositories</th>
+                        <th style="font-size: 17px; width: 90px; text-align: center; color: #3B5998;">Following</th>
+                        <th style="font-size: 17px; width: 90px; text-align: center; color: #3B5998;">Followers</th>
+                    </tr>
+
+                    <tr>
+                        <th id="git_repo" style="font-size: 27px; width: 90px; text-align: center; color: red;">---</th>
+                        <th id="git_following" style="font-size: 27px; width: 90px; text-align: center; color: red;">---
+                        </th>
+                        <th id="git_followers" style="font-size: 27px; width: 90px; text-align: center; color: red;">---
+                        </th>
+                    </tr>
+                </table>
+                <div class="git_btn_div">
+                    <a id="git_link"><button class="btn btn-primary git_btn" style="margin-top: 30px;">Visit
+                            Github</button></a>
+                </div>
+            </center>
+
+        </div>
+
+
+    </div>
+
+
+    <script src="index.js"></script>
+</body>
+
+</html>
